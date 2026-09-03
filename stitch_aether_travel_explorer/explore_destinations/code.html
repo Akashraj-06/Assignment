@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"inverse-primary": "#735c00", "on-error": "#690005", "surface-container": "#1c1f2a", "on-tertiary-container": "#3b4555", "surface-container-lowest": "#0a0e18", "on-primary": "#3c2f00", "tertiary": "#c4cfe2", "tertiary-fixed": "#d9e3f7", "primary": "#f2ca50", "outline": "#99907c", "surface-container-highest": "#313540", "on-surface-variant": "#d0c5af", "on-secondary": "#2a313c", "on-primary-container": "#554300", "secondary-container": "#454c58", "secondary": "#c0c7d5", "inverse-on-surface": "#2c303b", "surface-container-high": "#262a35", "on-surface": "#dfe2f1", "error": "#ffb4ab", "secondary-fixed-dim": "#c0c7d5", "primary-fixed": "#ffe088", "primary-fixed-dim": "#e9c349", "on-primary-fixed-variant": "#574500", "on-error-container": "#ffdad6", "surface-tint": "#e9c349", "tertiary-container": "#a9b3c6", "surface-variant": "#313540", "surface-dim": "#0f131d", "secondary-fixed": "#dce3f2", "tertiary-fixed-dim": "#bdc7db", "on-background": "#dfe2f1", "on-tertiary-fixed": "#121c2a", "on-secondary-fixed": "#151c27", "on-tertiary-fixed-variant": "#3d4757", "on-tertiary": "#273140", "surface-bright": "#353944", "error-container": "#93000a", "primary-container": "#d4af37", "inverse-surface": "#dfe2f1", "background": "#0f131d", "on-primary-fixed": "#241a00", "on-secondary-fixed-variant": "#404753", "outline-variant": "#4d4635", "on-secondary-container": "#b5bcca", "surface-container-low": "#171b26", "surface": "#0f131d"}, "borderRadius": {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"}, "spacing": {"gutter-lg": "2rem", "column-max-w": "1200px", "gutter-sm": "1rem", "margin-screen": "2rem", "gutter-md": "1.5rem"}, "fontFamily": {"headline-sm": ["Playfair Display"], "body-sm": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-xl": ["Playfair Display"]}, "fontSize": {"headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "500"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500"}], "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500"}], "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}], "headline-xl": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-[#1e2530]/75 backdrop-blur-[16px] shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-[#d4af37]/20"><div class="h-20 max-w-[1200px] mx-auto px-margin-screen flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Wanderlust AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4cLiNdreJYNetsE-2ahRV_V8wDB0EKeW34C7fhEvbdVjgOiNAVjqRc0v00ZpPLFdgBpZazmGyV7Caz6ofExQ1dGD6ltcTXkXKokm8pmeDc3nhPxh8LyHkkC6Ew_k28KiY2wlMicDV-ur9-jKefLJ2GjZYtX7KdBmXVFejyBO_CZN0spBLzDO_-sJrl7Od-xheO1zaQ-t7FWgWfXDPXTLqiwPczdLqysZZllmiGYYje5d5m4OiU3qb"/><span class="font-headline-sm text-primary tracking-wider uppercase">Wanderlust</span></div><nav class="hidden md:flex items-center gap-gutter-lg" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-bold"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container rounded-lg font-bold" data-path="explore" href="#">Explore</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="itineraries" href="#">Itineraries</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="weather-and-location" href="#">Weather &amp; Location</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-concierge" href="#">AI Concierge</a></nav><div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Hero Section -->
+<section class="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden -mt-20 pt-20">
+<div class="absolute inset-0 z-0 bg-surface-dim">
+<div class="absolute inset-0 bg-cover bg-center opacity-70 mix-blend-luminosity scale-105 transition-transform duration-1000" data-alt="Cinematic drone shot of an ultra-luxury overwater villa in Bora Bora at dusk, glowing warm golden lights reflecting on calm turquoise water, cinematic lighting, ultra-high resolution travel photography style, dark obsidian and warm gold color palette" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAN422ImmN4qJFSXTiZqOOEKTGB-m1SqCYS3PAosnXcjyWnFoUhCbWkMcaHDA11t1nNYkV-2C3wdAeYyT8na12XlJa-ygUyTWFOY1xZB_ySSYrpkhPtqwms59gab3UHHh_Enq6-Xp_Gr3XiTfQr6kXmEsHARrVuYDc8HBMQlUN_IH8yIRcaO_FqYpNol7nfYGTYio2rzqejfjWzkZIqX-871uG_4Ss6DZ4iRlQ-ApEw4AfE7ThOMxTT')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/80 via-transparent to-surface/80"></div>
+</div>
+<div class="relative z-10 max-w-[1200px] mx-auto px-margin-screen w-full flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container/80 backdrop-blur-md border border-primary/20 mb-6 shadow-xl animate-fade-in">
+<span class="material-symbols-outlined text-primary text-[16px]">arrow_back_ios_new</span>
+<span class="text-label-md text-primary tracking-widest uppercase">Curated Luxury Travel</span>
+</div>
+<h1 class="font-headline-xl text-[clamp(40px,6vw,72px)] leading-[1.1] tracking-tight text-on-surface mb-6 max-w-4xl">
+        Wander Beyond <br/><span class="italic font-normal text-primary">the Ordinary</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mb-10 font-light">
+        Discover bespoke itineraries, private sanctuaries, and transformative global experiences crafted for the world's most discerning travelers.
+      </p>
+<!-- Search & Filter Bar -->
+<div class="w-full max-w-3xl bg-surface-container/90 backdrop-blur-xl p-3 rounded-xl shadow-2xl flex flex-col md:flex-row gap-3 items-center">
+<div class="flex items-center gap-3 px-4 py-3 bg-surface-container-low rounded-lg w-full md:flex-1">
+<span class="material-symbols-outlined text-primary">search</span>
+<input class="bg-transparent border-none outline-none text-on-surface placeholder:text-outline w-full text-body-md" placeholder="Where does your intuition lead? (e.g. Kyoto, Amalfi)" type="text"/>
+</div>
+<div class="flex items-center gap-2 w-full md:w-auto">
+<button class="flex items-center justify-center gap-2 px-5 py-3 bg-surface-container-high hover:bg-surface-bright text-on-surface rounded-lg transition-colors w-full md:w-auto text-body-md font-medium" onclick="openFilterModal()">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span>Filters</span>
+</button>
+<button class="flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary-fixed text-on-primary rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] w-full md:w-auto text-body-md font-medium shadow-lg shadow-primary/20">
+            Explore
+          </button>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
+<span class="text-label-sm text-outline tracking-widest uppercase">Scroll</span>
+<span class="material-symbols-outlined text-primary animate-bounce">arrow_downward</span>
+</div>
+</section>
+<!-- Interactive Category Filters Bar -->
+<section class="w-full bg-surface-container-low py-6 border-y border-surface-container">
+<div class="max-w-[1200px] mx-auto px-margin-screen flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
+<span class="text-label-md text-outline uppercase mr-2 shrink-0">Vibe:</span>
+<button class="category-btn active px-4 py-2 rounded-full bg-primary text-on-primary text-label-md transition-all shrink-0" onclick="filterCategory(this, 'all')">All Sanctuaries</button>
+<button class="category-btn px-4 py-2 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant text-label-md transition-all shrink-0" onclick="filterCategory(this, 'gastronomy')">Gastronomy</button>
+<button class="category-btn px-4 py-2 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant text-label-md transition-all shrink-0" onclick="filterCategory(this, 'wilderness')">Wilderness</button>
+<button class="category-btn px-4 py-2 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant text-label-md transition-all shrink-0" onclick="filterCategory(this, 'island')">Private Islands</button>
+<button class="category-btn px-4 py-2 rounded-full bg-surface-container hover:bg-surface-bright text-on-surface-variant text-label-md transition-all shrink-0" onclick="filterCategory(this, 'heritage')">Heritage &amp; Art</button>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="text-label-md text-outline uppercase">Sort by:</span>
+<select class="bg-surface-container text-on-surface px-4 py-2 rounded-lg border-none outline-none text-label-md cursor-pointer">
+<option>Curated Match</option>
+<option>Highest Rated</option>
+<option>Exclusivity Index</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Destinations Grid Section -->
+<section class="max-w-[1200px] mx-auto px-margin-screen py-20 w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-label-md text-primary tracking-widest uppercase mb-2 block">Hand-Selected Escapes</span>
+<h2 class="font-headline-lg text-on-surface">Featured Sanctuaries</h2>
+</div>
+<p class="text-body-md text-on-surface-variant max-w-md">
+        Every destination is meticulously evaluated for architectural distinction, privacy, and transformative local immersion.
+      </p>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" onclick="openDetailModal('Kyoto', 'Japan', 'Ancient bamboo groves, private temple lodgings, and Michelin-starred kaiseki dining.', 'placeholder', 'An ultra-luxury traditional ryokan garden in Kyoto during autumn, glowing golden lanterns, maples with vibrant crimson and amber leaves, mist rolling over raked gravel, cinematic dark aesthetic with warm gold highlights')">
+<div class="relative h-96 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="An ultra-luxury traditional ryokan garden in Kyoto during autumn, glowing golden lanterns, maples with vibrant crimson and amber leaves, mist rolling over raked gravel, cinematic dark aesthetic with warm gold highlights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDLkMyw3D4wau3WJVPquXAgQHi-aorFS-3w6n51lJD5rLlsEmILjqYp_emBN9wWYPO4_hvleCJ3Z5DkEU3pz4RRrupAmNNg-7FhpRb-lZAfVvP62xmDwpQExDcjcrP60kRBv-eQ8u6QjZ8xz3vU1JZpxRIKyFxzcud5yrBs0tR0CUDu95ky889NbGW6wAcHfZr-HrpHr8JRJ7H_A1RJhzBnMQkjGCZj1u2t87Ie0vQ_lgSzCjjK9xJY')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-primary border border-primary/20">Heritage</span>
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-on-surface border border-outline/20">Asia</span>
+</div>
+<div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-label-sm text-outline mb-1">Kyoto, Japan</div>
+<h3 class="font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">The Serene Pagoda Retreat</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2 mb-4">Immerse yourself in centuries of spiritual quietude with private access to UNESCO sanctuaries.</p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-bright/40">
+<span class="text-body-sm text-primary font-medium">From $2,400 / night</span>
+<span class="text-label-md text-on-surface flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" onclick="openDetailModal('Amalfi Coast', 'Italy', 'Clifftop villas overlooking the Mediterranean, private yacht charters, and vintage coastal drives.', 'placeholder', 'A dramatic clifftop luxury villa overlooking the sparkling blue Amalfi Coast at sunset, sun-drenched lemon groves, elegant infinity pool merging with the sea, warm golden hour lighting, cinematic travel photography')">
+<div class="relative h-96 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="A dramatic clifftop luxury villa overlooking the sparkling blue Amalfi Coast at sunset, sun-drenched lemon groves, elegant infinity pool merging with the sea, warm golden hour lighting, cinematic travel photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlEue-on1kih7mgs3eLLdSHjHEvFOrB4ixLENINc-AqowgxgSNwrLa9PJjpmkPeG8S7BNqGoAXuNwESidgiyz2aC56jQHs9tAm7NyVDA8yoLFcbEi30cXw726xIksPQ81K5rU169KpN9JZ6Kv7f34z_bxdj4rh-GIwifUshK0PfiYVZ18Rz2i08gVY9DoR4oVKQwnYk5wVjF3IivKSdBN6bAPJdGvb-FNLPOo5a244qunf6G6LC-px')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-primary border border-primary/20">Gastronomy</span>
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-on-surface border border-outline/20">Europe</span>
+</div>
+<div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-label-sm text-outline mb-1">Amalfi Coast, Italy</div>
+<h3 class="font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Cliffside Palazzo &amp; Yacht</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2 mb-4">Savor private wine tastings in ancient cliffside vineyards and cruise hidden sea caves.</p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-bright/40">
+<span class="text-body-sm text-primary font-medium">From $3,800 / night</span>
+<span class="text-label-md text-on-surface flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" onclick="openDetailModal('Reykjavik', 'Iceland', 'Private helicopter glacier tours, geothermal spa lagoons, and the dancing Northern Lights.', 'placeholder', 'An ultra-modern minimalist glass lodge nestled in the stark volcanic landscape of Iceland, glowing warmly under the vibrant green ribbons of the Northern Lights, starry night sky, cinematic luxury adventure photography')">
+<div class="relative h-96 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="An ultra-modern minimalist glass lodge nestled in the stark volcanic landscape of Iceland, glowing warmly under the vibrant green ribbons of the Northern Lights, starry night sky, cinematic luxury adventure photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdVxXImGg6E73bA-rZ_wCVXIXoBb3esIF3tqNTeGcqAAv4n-AZ-9YzbKLaJPtHmhEL2CBNiSKcV8lUzhW6RulQ4hHu4nPlaPdfalYPuB5Pdjpanyoe3cAG5WXgOPXQ-uv7pEjqfKlqj5J_R32mvDW544WAcsTikcSRXmKJlbN6c6PxjKsl4vH7l_kj1IHAYixq9ix-RTOTFTUjPJuYV9zjsviU2f2jusnJcEnXzzNtuC-H8B0EQJ4K')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-primary border border-primary/20">Wilderness</span>
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-on-surface border border-outline/20">Europe</span>
+</div>
+<div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-label-sm text-outline mb-1">Reykjavik, Iceland</div>
+<h3 class="font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Aurora Glass Sanctuary</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2 mb-4">Witness the celestial wonder from an architectural masterpiece designed for stargazing.</p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-bright/40">
+<span class="text-body-sm text-primary font-medium">From $1,900 / night</span>
+<span class="text-label-md text-on-surface flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" onclick="openDetailModal('Bora Bora', 'French Polynesia', 'Overwater bungalows, private coral reef snorkeling, and Polynesian wellness rituals.', 'placeholder', 'Crystal clear turquoise lagoon in Bora Bora, luxury overwater thatched-roof bungalows with private plunge pools, lush tropical volcanic peaks rising in the background, cinematic aerial travel photography')">
+<div class="relative h-96 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="Crystal clear turquoise lagoon in Bora Bora, luxury overwater thatched-roof bungalows with private plunge pools, lush tropical volcanic peaks rising in the background, cinematic aerial travel photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFzrIkp92alaf7zrJVn5GxX8_tA1pJXHO_OR-Ptq5mZg6DWmpsl5XMH4j7yVwu7O5H5sHpIb0JOUcq953g-mT8TzvT1wtX3TmQduZbxsGzIbBsoks5BY35hEpRXwp0UWUDhtRxbW8ENTe8LnL5EMm4wzY6ir7bl_G_hnmQlzHoh-ofNyw_9gDJVJOpyG2yYUY2xx20hOWDVPUpD9UffLiV1rK4iWWnhC68CFZdDqWRK3A6OSTFLiFE')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-primary border border-primary/20">Private Islands</span>
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-on-surface border border-outline/20">Pacific</span>
+</div>
+<div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-label-sm text-outline mb-1">Bora Bora, French Polynesia</div>
+<h3 class="font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Motu Overwater Haven</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2 mb-4">Step directly from your private sun deck into crystal-clear turquoise lagoons teeming with marine life.</p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-bright/40">
+<span class="text-body-sm text-primary font-medium">From $4,200 / night</span>
+<span class="text-label-md text-on-surface flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" onclick="openDetailModal('Marrakech', 'Morocco', 'Private riads, bespoke souk curation, and candlelit dinners in the Agafay Desert.', 'placeholder', 'An opulent Moroccan riad interior courtyard in Marrakech, intricate geometric zellige tilework, lush central palm trees, reflecting pool, warm lantern light casting soft shadows, cinematic luxury photography')">
+<div class="relative h-96 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="An opulent Moroccan riad interior courtyard in Marrakech, intricate geometric zellige tilework, lush central palm trees, reflecting pool, warm lantern light casting soft shadows, cinematic luxury photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDT4g3RA0lBcO4iwMsuSEpZ6LNV3khAefZrfCVvWGCjZA-qxjeMBoeOM4A_3BjI8PXwWwaTy-WjxY8UJQ1GPDWLkHjKFh2G6i0XqyvePF_WeKhWbCKHCfkTfUd1qM7xrmeio87REfXES6zjTxnHkwbYUkP0PqnHbJfWiZ7PSt_2t-bVNzCYZ0VKqVoqFsqxwbbVKVMlDIPxCecQpCwK55QCkB-MD0SntgX_BfqLrSoxuG0BAKn_ys3n')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-primary border border-primary/20">Heritage</span>
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-on-surface border border-outline/20">Africa</span>
+</div>
+<div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-label-sm text-outline mb-1">Marrakech, Morocco</div>
+<h3 class="font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">The Royal Riad Oasis</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2 mb-4">Discover secretive architectural marvels, fragrant spice gardens, and bespoke artisan commissioning.</p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-bright/40">
+<span class="text-body-sm text-primary font-medium">From $1,600 / night</span>
+<span class="text-label-md text-on-surface flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1" onclick="openDetailModal('Swiss Alps', 'Switzerland', 'Ski-in/ski-out luxury chalets, private Alpine guides, and world-class fondue by the fireplace.', 'placeholder', 'An ultra-exclusive luxury chalet in Zermatt, Switzerland, glowing warmly in a pristine snowy alpine valley beneath the dramatic peak of the Matterhorn at dusk, cinematic winter luxury photography')">
+<div class="relative h-96 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="An ultra-exclusive luxury chalet in Zermatt, Switzerland, glowing warmly in a pristine snowy alpine valley beneath the dramatic peak of the Matterhorn at dusk, cinematic winter luxury photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5foPzreNRnsx897gR_HHwgrTYP0bwkFiN0kLv2kgufo2WtNvlw2C2c-tpJuilgsm3MkvLars6ebwhf_nrUCNZnLQPqAPDu0vu5SZw3pvdyDeXoonNM7VwiOAWemje7BjPpffiZAKbluk1TfuQca1SUSAVpnSNBgvY2VaCcAt-vZG4zzfyVEdcPWahsyVzxYER3IRc6U21jE8CNcGo6atYrOE0oUAZGRVrnF4CM9iFrc-cY95Q1m-C')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-primary border border-primary/20">Wilderness</span>
+<span class="px-3 py-1 rounded-full bg-surface/80 backdrop-blur-md text-label-sm text-on-surface border border-outline/20">Europe</span>
+</div>
+<div class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-label-sm text-outline mb-1">Zermatt, Switzerland</div>
+<h3 class="font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Matterhorn Alpine Chalet</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2 mb-4">Indulge in fireside cognac after carving virgin powder slopes with your private Olympic guide.</p>
+<div class="flex items-center justify-between pt-4 border-t border-surface-bright/40">
+<span class="text-body-sm text-primary font-medium">From $5,100 / night</span>
+<span class="text-label-md text-on-surface flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Destination Detail Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-dim/90 backdrop-blur-2xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 overflow-y-auto p-4 md:p-8" id="destinationModal">
+<div class="bg-surface-container w-full max-w-5xl rounded-2xl overflow-hidden shadow-2xl border border-primary/20 transform scale-95 transition-transform duration-300 my-auto" id="modalContent">
+<!-- Modal Header Image -->
+<div class="relative h-72 md:h-96 w-full bg-cover bg-center" data-alt="Modal showcase image placeholder" id="modalImage" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBueLiZ5BJvolvrfCUkTsVRgIvN8Amqu0aoRh31cyWkH7XtqBI5mhOCTVeQrk0A57WnyCcVJNosJOdCf8_Q6IyR_fAQcYYcfCE2gtlX3v3vBOsxHoaGR7_xPGHrxpys-9IMx1BUdwLrI_L9SXE3Qi192WOJzn1eyICs3c_W6HiHCO08LANS75nKKh6x54uYgOZhI5Tqc2RKAi-m3DFWSuxLkPLidgp3TzstMSuoWGOTj0NbKQa8jSN')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<button class="absolute top-6 right-6 w-12 h-12 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors z-10 shadow-xl" onclick="closeDetailModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="text-label-md text-primary tracking-widest uppercase mb-1 block" id="modalLocation">Kyoto, Japan</span>
+<h2 class="font-headline-lg text-on-surface" id="modalTitle">The Serene Pagoda Retreat</h2>
+</div>
+<button class="px-6 py-3 bg-primary hover:bg-primary-fixed text-on-primary rounded-lg font-medium transition-all shadow-lg shadow-primary/20 flex items-center gap-2 self-start md:self-auto">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Reserve Itinerary</span>
+</button>
+</div>
+</div>
+<!-- Modal Body Content -->
+<div class="p-8 md:p-12 space-y-10">
+<!-- Overview & Highlights -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-4">
+<h3 class="font-headline-md text-on-surface">Curated Overview</h3>
+<p class="text-body-lg text-on-surface-variant font-light leading-relaxed" id="modalDescription">
+              Immerse yourself in centuries of spiritual quietude with private access to UNESCO sanctuaries and exclusive masters of traditional arts.
+            </p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-surface-bright/20 space-y-4">
+<h4 class="text-label-md text-primary uppercase tracking-widest">At a Glance</h4>
+<div class="flex items-center justify-between text-body-sm py-2 border-b border-surface-container">
+<span class="text-outline">Best Season</span>
+<span class="text-on-surface font-medium">Spring &amp; Autumn</span>
+</div>
+<div class="flex items-center justify-between text-body-sm py-2 border-b border-surface-container">
+<span class="text-outline">Ideal Duration</span>
+<span class="text-on-surface font-medium">7 - 10 Days</span>
+</div>
+<div class="flex items-center justify-between text-body-sm py-2">
+<span class="text-outline">Private Concierge</span>
+<span class="text-on-surface font-medium">Included 24/7</span>
+</div>
+</div>
+</div>
+<!-- Famous Spots / Timeline Highlights -->
+<div>
+<h3 class="font-headline-md text-on-surface mb-6">Iconic Highlights</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl space-y-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">temple_buddhist</span>
+</div>
+<h4 class="font-headline-sm text-on-surface">Private Temple Access</h4>
+<p class="text-body-sm text-on-surface-variant">Experience dawn meditation alongside head monks before public entry.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl space-y-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h4 class="font-headline-sm text-on-surface">Michelin Kaiseki Dining</h4>
+<p class="text-body-sm text-on-surface-variant">Private chef table reservations at centuries-old culinary institutions.</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl space-y-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">forest</span>
+</div>
+<h4 class="font-headline-sm text-on-surface">Arashiyama Bamboo Walk</h4>
+<p class="text-body-sm text-on-surface-variant">Chauffeured rickshaw tours through tranquil secluded forest paths.</p>
+</div>
+</div>
+</div>
+<!-- Visitor Tips & Insider Advice -->
+<div class="bg-surface-container-high p-8 rounded-xl space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<h3 class="font-headline-sm text-on-surface">Wanderlust Insider Tips</h3>
+</div>
+<p class="text-body-md text-on-surface-variant">
+            "Request our lead cultural curator, Kenji-san, for your tea ceremony. His lineage in Uji tea production provides unmatched access to private family estates that remain entirely closed to general tourism."
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Advanced Filters Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-dim/90 backdrop-blur-2xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 p-4" id="filterModal">
+<div class="bg-surface-container w-full max-w-xl rounded-2xl p-8 shadow-2xl border border-primary/20 transform scale-95 transition-transform duration-300 space-y-6" id="filterModalContent">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
+<h3 class="font-headline-md text-on-surface">Refine Preferences</h3>
+<button class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors" onclick="closeFilterModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4">
+<div>
+<label class="text-label-md text-primary uppercase tracking-widest block mb-2">Continent</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="px-4 py-2.5 rounded-lg bg-surface text-on-surface text-label-md hover:bg-primary hover:text-on-primary transition-colors">Asia</button>
+<button class="px-4 py-2.5 rounded-lg bg-surface text-on-surface text-label-md hover:bg-primary hover:text-on-primary transition-colors">Europe</button>
+<button class="px-4 py-2.5 rounded-lg bg-surface text-on-surface text-label-md hover:bg-primary hover:text-on-primary transition-colors">Africa</button>
+<button class="px-4 py-2.5 rounded-lg bg-surface text-on-surface text-label-md hover:bg-primary hover:text-on-primary transition-colors">Americas</button>
+<button class="px-4 py-2.5 rounded-lg bg-surface text-on-surface text-label-md hover:bg-primary hover:text-on-primary transition-colors">Pacific</button>
+<button class="px-4 py-2.5 rounded-lg bg-surface text-on-surface text-label-md hover:bg-primary hover:text-on-primary transition-colors">Polar</button>
+</div>
+</div>
+<div>
+<label class="text-label-md text-primary uppercase tracking-widest block mb-2">Budget Range / Night</label>
+<input class="w-full accent-primary cursor-pointer" max="10000" min="1000" step="500" type="range"/>
+<div class="flex justify-between text-label-sm text-outline mt-1">
+<span>$1,000</span>
+<span>$5,000</span>
+<span>$10,000+</span>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-3 pt-4 border-t border-surface-container-high">
+<button class="px-5 py-2.5 bg-surface-container-high text-on-surface rounded-lg text-label-md" onclick="closeFilterModal()">Reset</button>
+<button class="px-6 py-2.5 bg-primary text-on-primary rounded-lg text-label-md font-medium" onclick="closeFilterModal()">Apply Filters</button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript -->
+<script>
+    function filterCategory(btn, category) {
+      document.querySelectorAll('.category-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      btn.classList.add('bg-primary', 'text-on-primary');
+    }
+
+    function openDetailModal(location, country, desc, imgPlaceholder, imgAlt) {
+      document.getElementById('modalLocation').innerText = `${location}, ${country}`;
+      document.getElementById('modalTitle').innerText = `${location} Sanctuary Experience`;
+      document.getElementById('modalDescription').innerText = desc;
+      const modalImg = document.getElementById('modalImage');
+      modalImg.style.backgroundImage = `url('${imgPlaceholder}')`;
+      modalImg.setAttribute('data-alt', imgAlt);
+
+      const modal = document.getElementById('destinationModal');
+      const content = document.getElementById('modalContent');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDetailModal() {
+      const modal = document.getElementById('destinationModal');
+      const content = document.getElementById('modalContent');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      document.body.style.overflow = 'auto';
+    }
+
+    function openFilterModal() {
+      const modal = document.getElementById('filterModal');
+      const content = document.getElementById('filterModalContent');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeFilterModal() {
+      const modal = document.getElementById('filterModal');
+      const content = document.getElementById('filterModalContent');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-12 px-margin-screen border-t border-[#d4af37]/10"><div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-gutter-md"><div class="flex items-center gap-2"><span class="font-headline-sm text-primary">Wanderlust AI</span><span class="text-body-sm text-outline">- Curated Luxury Travel</span></div><p class="text-body-sm text-on-surface-variant">© 2024 Wanderlust AI. All rights reserved.</p></div></footer></body></html>

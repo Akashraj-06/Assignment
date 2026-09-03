@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#f2ca50",
+        "on-primary": "#3c2f00",
+        "primary-container": "#d4af37",
+        "on-primary-container": "#554300",
+        "inverse-primary": "#735c00",
+        "primary-fixed": "#ffe088",
+        "primary-fixed-dim": "#e9c349",
+        "surface": "#0f131d",
+        "surface-dim": "#0f131d",
+        "surface-bright": "#353944",
+        "surface-container-lowest": "#0a0e18",
+        "surface-container-low": "#171b26",
+        "surface-container": "#1c1f2a",
+        "surface-container-high": "#262a35",
+        "surface-container-highest": "#313540",
+        "on-surface": "#dfe2f1",
+        "on-surface-variant": "#d0c5af",
+        "inverse-surface": "#dfe2f1",
+        "inverse-on-surface": "#2c303b",
+        "outline": "#99907c",
+        "outline-variant": "#4d4635",
+        "surface-tint": "#e9c349",
+        "secondary": "#c0c7d5",
+        "on-secondary": "#2a313c",
+        "secondary-container": "#454c58",
+        "on-secondary-container": "#b5bcca",
+        "tertiary": "#c4cfe2",
+        "on-tertiary": "#273140",
+        "error": "#ffb4ab",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+      },
+      fontFamily: {
+        headline: ["'Playfair Display'", "Georgia", "serif"],
+        body: ["Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+      },
+      spacing: {
+        "margin-screen": "2rem",
+        "gutter-sm": "1rem",
+        "gutter-md": "1.5rem",
+        "gutter-lg": "2rem",
+        "column-max-w": "1200px",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(8px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        pulseSlow: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.4" },
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "pulse-slow": "pulseSlow 3s ease-in-out infinite",
+      },
+    },
+  },
+  plugins: [],
+};
