@@ -4,6 +4,7 @@ import { fetchWeatherForCityOrCoords } from '../../services/weatherService';
 import { reverseGeocodeCoords, calculateHaversineDistance } from '../../services/geolocationService';
 import { DESTINATIONS_DATA } from '../../data/destinations';
 import { Destination } from '../../types/destination';
+import { WeatherSkeleton } from '../common/SkeletonLoader';
 import { 
   CloudSun, MapPin, Navigation, Search, Wind, Droplets, 
   Eye, Sun, AlertTriangle, CheckCircle2, RefreshCw, Compass
@@ -38,7 +39,8 @@ export const WeatherView: React.FC<WeatherViewProps> = ({ initialCity = 'Kyoto',
     } catch (e) {
       console.error('Weather load error:', e);
     } finally {
-      setLoading(false);
+      // Small graceful buffer to show smooth transition
+      setTimeout(() => setLoading(false), 300);
     }
   };
 
@@ -235,12 +237,16 @@ export const WeatherView: React.FC<WeatherViewProps> = ({ initialCity = 'Kyoto',
         <div className="lg:col-span-2 rounded-2xl overflow-hidden relative min-h-[260px] shadow-xl border border-primary/20 group flex flex-col justify-end p-6 sm:p-8">
           <img
             src={
-              weatherData?.city.toLowerCase().includes('kyoto')
+              activeCity.toLowerCase().includes('kyoto')
                 ? 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80'
-                : weatherData?.city.toLowerCase().includes('amalfi')
+                : activeCity.toLowerCase().includes('amalfi')
                 ? 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80'
-                : weatherData?.city.toLowerCase().includes('zermatt')
+                : activeCity.toLowerCase().includes('zermatt')
                 ? 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80'
+                : activeCity.toLowerCase().includes('reykjavik')
+                ? 'https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=1200&q=80'
+                : activeCity.toLowerCase().includes('serengeti')
+                ? 'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80'
                 : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
             }
             alt="Location Atmosphere"
@@ -260,7 +266,7 @@ export const WeatherView: React.FC<WeatherViewProps> = ({ initialCity = 'Kyoto',
                 {weatherData?.city || activeCity}
               </h2>
               <p className="text-xs text-on-surface-variant font-light mt-1">
-                {weatherData?.coordinates.lat.toFixed(4)}° N, {weatherData?.coordinates.lng.toFixed(4)}° E • Live Telemetry Active
+                {weatherData?.coordinates.lat ? `${weatherData.coordinates.lat.toFixed(4)}° N, ${weatherData.coordinates.lng.toFixed(4)}° E • Live Telemetry Active` : 'Synchronizing telemetry...'}
               </p>
             </div>
 
@@ -272,9 +278,15 @@ export const WeatherView: React.FC<WeatherViewProps> = ({ initialCity = 'Kyoto',
         </div>
       </div>
 
-      {/* Live Weather Telemetry Dashboard */}
-      {weatherData && (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {/* Live Weather Telemetry Dashboard or Skeleton Loader */}
+      {loading ? (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 animate-fade-in">
+          <WeatherSkeleton />
+          <WeatherSkeleton />
+          <WeatherSkeleton />
+        </div>
+      ) : weatherData ? (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 animate-fade-in">
           
           {/* Current Conditions Large Card */}
           <div className="bg-surface-container rounded-2xl p-8 flex flex-col justify-between shadow-xl border border-primary/20 relative overflow-hidden">
@@ -401,7 +413,7 @@ export const WeatherView: React.FC<WeatherViewProps> = ({ initialCity = 'Kyoto',
             </div>
           </div>
         </div>
-      )}
+      ) : null}
     </div>
   );
 };
